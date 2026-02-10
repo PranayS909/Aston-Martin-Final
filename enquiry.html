@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry | Aston Martin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="enquiry.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/aston-martin-logo-png-transparent.png" s alt="Aston Martin" class="logo-svg">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#models-section" class="nav-link">Models</a></li>
+                    <li class="nav-item"><a href="index.html#stories-section" class="nav-link">Stories</a></li>
+                    <li class="nav-item"><a href="index.html#news-section" class="nav-link">News</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="btn btn-secondary">Configure</button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Enquiry Section -->
+    <section class="enquiry-section">
+        <div class="enquiry-container">
+            <!-- Left Side - Form -->
+            <div class="enquiry-form-wrapper">
+                <div class="enquiry-header">
+                    <h1 class="enquiry-title">General Enquiry</h1>
+                    <p class="enquiry-subtitle">We would love to hear from you</p>
+                </div>
+
+                <form id="enquiryForm" class="enquiry-form">
+                    <!-- Title -->
+                    <div class="form-group">
+                        <label for="title">Title *</label>
+                        <select id="title" name="title" required>
+                            <option value="">Select title</option>
+                            <option value="Mr">Mr.</option>
+                            <option value="Mrs">Mrs.</option>
+                            <option value="Ms">Ms.</option>
+                            <option value="Mx">Mx.</option>
+                        </select>
+                    </div>
+
+                    <!-- Name Fields -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <!-- Contact Fields -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <!-- Model Selection -->
+                    <div class="form-group">
+                        <label for="model">Select a Model</label>
+                        <select id="model" name="model">
+                            <option value="">Select a model</option>
+                            <option value="Vantage S">Vantage S</option>
+                            <option value="Vantage">Vantage</option>
+                            <option value="Vantage Roadster">Vantage Roadster</option>
+                            <option value="DB12 S">DB12 S</option>
+                            <option value="DB12">DB12</option>
+                            <option value="DB12 Volante">DB12 Volante</option>
+                            <option value="Vanquish">Vanquish</option>
+                            <option value="Vanquish Volante">Vanquish Volante</option>
+                            <option value="DBX S">DBX S</option>
+                            <option value="DBX707">DBX707</option>
+                            <option value="Valhalla">Valhalla</option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-group">
+                        <label for="message">Additional Comments</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+
+                    <!-- Marketing Preferences -->
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <strong>Stay Connected</strong>
+                        </label>
+                        <p class="form-description">We would like to stay in touch with you. Please confirm how you would like to hear from us:</p>
+                        
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contactEmail" value="yes">
+                                <span>Email</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contactPhone" value="yes">
+                                <span>Phone</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contactPost" value="yes">
+                                <span>Post</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="contactSMS" value="yes">
+                                <span>SMS</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                        Submit Enquiry
+                    </button>
+
+                    <!-- Success/Error Messages -->
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+
+            <!-- Right Side - Car Image -->
+            <div class="enquiry-image-wrapper">
+                <img src="https://www.astonmartin.com/-/media/homepage---promo---stills/timeless_6165_graded-saturation.jpg?mw=1920&rev=7972929836a4448cb1ca01fbc815b00c&extension=webp&hash=CB89ACBF709A6A0F2CEC1603C9840841" alt="Aston Martin" class="enquiry-car-image">
+                <div class="image-overlay">
+                    <p class="overlay-text">DRIVEN BY EXCELLENCE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Our World</a></li>
+                    <li><a href="#">Models</a></li>
+                    <li><a href="#">Owners</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Dealers</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <p>&copy; Aston Martin 2025</p>
+                <ul class="legal-links">
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="enquiry.js"></script>
+</body>
+</html>

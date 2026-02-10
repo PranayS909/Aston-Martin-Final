@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aston Martin | Iconic Luxury British Sports Cars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/aston-martin-logo-png-transparent.png" s alt="Aston Martin" class="logo-svg">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <a href="#models-section" class="nav-link">Models</a>
+                        <div class="dropdown-menu models-dropdown">
+                            <div class="dropdown-content">
+                                <div class="dropdown-section">
+                                    <h3>Vantage</h3>
+                                    <ul>
+                                        <li><a href="#">Vantage S</a></li>
+                                        <li><a href="#">Vantage</a></li>
+                                        <li><a href="#">Vantage Roadster</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-section">
+                                    <h3>DB12</h3>
+                                    <ul>
+                                        <li><a href="#">DB12 S</a></li>
+                                        <li><a href="#">DB12</a></li>
+                                        <li><a href="#">DB12 Volante</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-section">
+                                    <h3>Vanquish</h3>
+                                    <ul>
+                                        <li><a href="#">Vanquish</a></li>
+                                        <li><a href="#">Vanquish Volante</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-section">
+                                    <h3>DBX</h3>
+                                    <ul>
+                                        <li><a href="#">DBX S</a></li>
+                                        <li><a href="#">DBX707</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="#stories-section" class="nav-link">Stories</a></li>
+                    <li class="nav-item"><a href="#news-section" class="nav-link">Stories</a></li>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="btn btn-secondary">Configure</button>
+                <button class="btn btn-primary" onclick="window.location.href='enquiry.html'">Enquire</button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="https://www.astonmartin.com/-/media/top-gear-award-2026/tga-desk-still-new.jpg" alt="DBX707" class="hero-image">
+                <div class="hero-content">
+                    <p class="hero-subtitle">Top Gear Award</p>
+                    <h1 class="hero-title">Super SUV of the Year 2026</h1>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-outline-light">Configure</a>
+                        <a href="#" class="btn btn-outline-light">Watch Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <video src="https://www.astonmartin.com/-/media/vanquish-2-plus-2/vanquish-2-2-hero-desk.mp4?rev=9ca318facd3a41c6a51c247cb5f4bcf0" class="hero-image" autoplay loop muted playsinline></video>
+                <div class="hero-content">
+                    <p class="hero-subtitle">ZENITH. DRIVEN.</p>
+                    <h1 class="hero-title">V12 Symphony, Now in Quartet</h1>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-outline-light">Explore</a>
+                        <a href="#" class="btn btn-outline-light">Configure</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <video src="https://www.astonmartin.com/-/media/aston-martin/videos/model-carousel-updates/video-updates/valhalla-gaydon-desktop.mp4?rev=1876e1a43f01455080f2b5cceca9f4eb" class="hero-image" autoplay loop muted playsinline></video>
+                <div class="hero-content">
+                    <p class="hero-subtitle">AURA. DRIVEN.</p>
+                    <h1 class="hero-title">Experience True Sophisticated Power.</h1>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-outline-light">Explore</a>
+                        <a href="#" class="btn btn-outline-light">Configure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-nav">
+            <button class="hero-nav-btn prev" id="heroPrev">&#8249;</button>
+            <button class="hero-nav-btn next" id="heroNext">&#8250;</button>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section class="models-section" id="models-section">
+        <div class="models-grid">
+            <div class="model-card">
+                <img src="https://www.astonmartin.com/-/media/models---db12-s/final-images/heros/engineering-hero-new.jpg?rev=795f7fe705744891b6bd4ae148ff5e1d" alt="DB12 S" class="model-image">
+                <div class="model-content">
+                    <p class="model-subtitle">ICON. DRIVEN.</p>
+                    <h2 class="model-title">DB12 S</h2>
+                    <div class="model-buttons">
+                        <a href="#" class="btn btn-text">Explore</a>
+                        <a href="#" class="btn btn-text">Configure</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="model-card">
+                <img src="https://www.astonmartin.com/-/media/models---vantage-s/final/vantage-s-hero-desktop-final.jpg?mw=1920&rev=45728a2770aa41b0a10a9540e78c6530&hash=C549C3C19B3CE11CFD876DED6E09DFBB" alt="Vantage" class="model-image">
+                <div class="model-content">
+                    <p class="model-subtitle">THRILL. DRIVEN.</p>
+                    <h2 class="model-title">Vantage</h2>
+                    <div class="model-buttons">
+                        <a href="#" class="btn btn-text">Explore</a>
+                        <a href="#" class="btn btn-text">Configure</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="model-card">
+                <img src="https://www.astonmartin.com/-/media/models---60-years-volante/final/vv-lft-final.jpg?mw=1920&rev=-1&hash=9A32A001016675815521BDB020E683F9" alt="DB12 Volante" class="model-image">
+                <div class="model-content">
+                    <p class="model-subtitle">ICON. DRIVEN.</p>
+                    <h2 class="model-title">DB12 VOLANTE</h2>
+                    <div class="model-buttons">
+                        <a href="#" class="btn btn-text">Explore</a>
+                        <a href="#" class="btn btn-text">Configure</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="model-card">
+                <img src="https://www.astonmartin.com/-/media/new-model-page-design---models/all_models_imagery-for-new-component/vanquish-am370/240814_am370_shot_01_kv_front_7_8_rgb_72.jpg?mw=1920&rev=2d21eb909967450eb301dbbf97c32547&hash=4BB2252A373F71BA3290FBF91AA21030" alt="Vanquish" class="model-image">
+                <div class="model-content">
+                    <p class="model-subtitle">ZENITH. DRIVEN.</p>
+                    <h2 class="model-title">Vanquish</h2>
+                    <div class="model-buttons">
+                        <a href="#" class="btn btn-text">Explore</a>
+                        <a href="#" class="btn btn-text">Configure</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="model-card">
+                <img src="https://www.astonmartin.com/-/media/models---dbx-s/final-images/all-models-dbx-s-desktop.jpg?mw=1920&rev=1b969e70e2934e6b959c0805c44ae110&hash=154F3ADFF974800D09FFFD25624033DF" alt="DBX S" class="model-image">
+                <div class="model-content">
+                    <p class="model-subtitle">POWER. DRIVEN.</p>
+                    <h2 class="model-title">DBX S</h2>
+                    <div class="model-buttons">
+                        <a href="#" class="btn btn-text">Explore</a>
+                        <a href="#" class="btn btn-text">Configure</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="model-card">
+                <img src="https://www.astonmartin.com/-/media/models---valhalla-2024-relaunch/valhalla-all-models-update/valhalla-all-models-hero-2.jpg?mw=1920&rev=50481b084d474f58971091efbdce22d6&hash=79951E6102CFE3093D267279131B5080" alt="Valhalla" class="model-image">
+                <div class="model-content">
+                    <p class="model-subtitle">MASTERY. DRIVEN.</p>
+                    <h2 class="model-title">Valhalla</h2>
+                    <div class="model-buttons">
+                        <a href="#" class="btn btn-text">Explore</a>
+                        <a href="#" class="btn btn-text">Configure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Cards Section -->
+    <section class="info-cards">
+        <div class="info-card">
+            <div class="info-card-content">
+                <h3 class="info-card-title">ASTON MARTIN PRE OWNED</h3>
+                <a href="#" class="btn btn-text">Explore</a>
+            </div>
+        </div>
+        <div class="info-card">
+            <div class="info-card-content">
+                <h3 class="info-card-title">Aston Martin Magazine</h3>
+                <a href="#" class="btn btn-text">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section class="stories-section" id="stories-section">
+        <div class="section-header">
+            <h2 class="section-title">Stories</h2>
+            <a href="#" class="btn btn-text">Read all stories</a>
+        </div>
+        
+        <div class="stories-slider">
+            <div class="stories-track" id="storiesTrack">
+                <div class="story-card">
+                    <img src="https://www.astonmartin.com/-/media/brand-stories/bero/bero-new-hero.jpg" alt="Story" class="story-image">
+                    <div class="story-content">
+                        <p class="story-category">Business</p>
+                        <h3 class="story-title">Aston Martin x BERO</h3>
+                        <p class="story-date">12 November 2025</p>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <img src="https://www.astonmartin.com/-/media/brand-stories/goodwood2025/final-selects/goodwood-hero-desktop-3.jpg" alt="Story" class="story-image">
+                    <div class="story-content">
+                        <p class="story-category">Experience</p>
+                        <h3 class="story-title">Unleashing the Edge. Sharpened. At Goodwood Festival of Speed 2025.</h3>
+                        <p class="story-date">17 July 2025</p>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <img src="https://www.astonmartin.com/-/media/brand-stories/carplay-2/final-imagery/ferrite-homepage-hero-banner-desktop.jpg" alt="Story" class="story-image">
+                    <div class="story-content">
+                        <p class="story-category">Product</p>
+                        <h3 class="story-title">Aston Martin and Apple CarPlay Ultra®</h3>
+                        <p class="story-date">15 May 2025</p>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <img src="https://www.astonmartin.com/-/media/brand-stories/bero/bero-new-hero.jpg" alt="Story" class="story-image">
+                    <div class="story-content">
+                        <p class="story-category">Business</p>
+                        <h3 class="story-title">Aston Martin x BERO</h3>
+                        <p class="story-date">12 November 2025</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-nav prev" id="storiesPrev">&#8249;</button>
+            <button class="slider-nav next" id="storiesNext">&#8250;</button>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section" id="news-section">
+        <div class="section-header">
+            <h2 class="section-title">News</h2>
+            <a href="#" class="btn btn-text">See all news</a>
+        </div>
+        
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="https://www.astonmartin.com/-/media/common/news/8e7580a63448b6e2c00b24f214d23ca6.jpg?mw=580&rev=ec1db853b8b0485295f1042e595b7705&hash=7496716F6D6A48C2DC2989AE6E2322CF" alt="News" class="news-image">
+                <div class="news-content">
+                    <p class="news-date">5 Feb 2026</p>
+                    <h3 class="news-title">Aston Martin and Breitling ignite a shared legacy</h3>
+                    <a href="#" class="btn btn-text">Explore</a>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <img src="https://www.astonmartin.com/-/media/common/news/5cb604a88e03560422035d55c94033a3.jpg?mw=580&rev=eaf76a8c757246edb4e37f1c14f4da87&hash=D0BB98F5A8B4B9A34D23D999FB7639AF" alt="News" class="news-image">
+                <div class="news-content">
+                    <p class="news-date">29 Jan 2026</p>
+                    <h3 class="news-title">Aston Martin unveils Vanquish Volante Wave Edition for the 2026 Naples Winter Wine Festival auction</h3>
+                    <a href="#" class="btn btn-text">Explore</a>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <img src="https://www.astonmartin.com/-/media/common/news/4a43bb5e29443f9b4a89757ab81b9a70.jpg?mw=580&rev=9b90ab2d03ea4c24bb06eb8f7c6cddc7&hash=9E468EE62F07973673DDFC5C22BE0D49" alt="News" class="news-image">
+                <div class="news-content">
+                    <p class="news-date">25 Jan 2026</p>
+                    <h3 class="news-title">Vantage begins IMSA season with brilliant double-podium finish in Rolex 24 at Daytona</h3>
+                    <a href="#" class="btn btn-text">Explore</a>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <img src="https://www.astonmartin.com/-/media/common/news/cf3b437a7b1375a50f9b2e04451f5dd2.jpg?mw=580&rev=4f356d3ed7434a3984eea2fc045be95c&hash=F3E6D4231C072E5BED2F6C7A4A5BF293" alt="News" class="news-image">
+                <div class="news-content">
+                    <p class="news-date">21 Jan 2026</p>
+                    <h3 class="news-title">2026 Aston Martin Experiences introduce a new era of exceptional moments</h3>
+                    <a href="#" class="btn btn-text">Explore</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Our World</a></li>
+                    <li><a href="#">Models</a></li>
+                    <li><a href="#">Owners</a></li>
+                    <li><a href="#">F1 Team</a></li>
+                    <li><a href="#">Preowned</a></li>
+                    <li><a href="#">Experiences</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Dealers</a></li>
+                    <li><a href="#">Enquiry</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Corporate</h4>
+                <ul class="footer-list">
+                    <li><a href="#">Corporate</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4 class="footer-title">Find a dealer</h4>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <p>&copy; Aston Martin 2025</p>
+                <ul class="legal-links">
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
